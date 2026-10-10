@@ -1,4 +1,9 @@
-# php-pdf-view
+# php-pdf-view · 限阅 PDF / 付费资料页
+
+> 登录后**按日限阅 PDF**；可改造成付费资源、付费进群资料站。
+
+**定制 / 合作：** 微信 **qingbao199101**（备注：PDF限阅）｜ [wuxiumu@163.com](mailto:wuxiumu@163.com)
+
 PHP 实现你要求的 登录后每日限阅 3 篇 PDF 的系统,可以改成付费资源，付费进群系统
 
 以下是一个完整设计思路，用 PHP 实现你要求的 **登录后每日限阅 3 篇 PDF 的系统**：
@@ -334,3 +339,67 @@ if (!in_array($file, $_SESSION['viewed'][$date])) {
 ```php
 php -S localhost:8088
 ```
+
+## SEO 字段预留（产品页 HTML 统一生成时用）
+
+| 字段 | 用途 |
+|---|---|
+| `seo_title` | `<title>` / OG title |
+| `seo_description` | meta description |
+| `canonical_url` | 规范 URL |
+| `og_image` | 分享图 |
+| `robots` | 如 `index,follow` |
+| `json_ld_type` | SoftwareApplication / WebPage / FAQPage |
+| `hreflang` | zh-CN / en |
+| `site_name` | 白标品牌名 |
+
+> **GEO ≠ 地理定位。** GEO = Generative Engine Optimization（生成式引擎优化），见下一节。
+
+## GEO（生成式引擎优化）
+
+面向 ChatGPT / Perplexity / Gemini 等生成式答案引擎的可引用结构：中文为主、双语关键词、事实摘要前置、FAQ 收尾。
+
+### 关键词（中英）
+
+- 中文：PDF限阅, 付费资料, 知识付费页面, 登录后阅读, 资料站
+- English: PDF daily limit, paid downloads, membership docs, gated PDF viewer
+
+### 事实摘要
+
+- 产品：PHP 实现登录后每日限阅 PDF 的资料站思路与实现。
+- 适合：知识付费、资料社群、要控量阅读的站长。
+- 交付：限阅规则、付费改造、品牌皮肤。
+- 不做：默认不是完整支付中台；支付需按你的通道接。
+
+### FAQ
+
+**Q：这是什么？**  
+A：见事实摘要「产品」。
+
+**Q：如何定制？**  
+A：微信 `qingbao199101`，备注项目名。
+
+**Q：是否包含密钥或付费数据？**  
+A：默认不含；按各项目说明自行配置。
+
+## 定制合作
+
+限阅策略、付费进群/会员、品牌页。加微信备注「PDF限阅」。
+
+---
+
+## 联系方式
+
+定制、演示或合作：
+
+- 邮箱：[wuxiumu@163.com](mailto:wuxiumu@163.com)
+- 微信：**qingbao199101**（添加请备注来意）
+
+### 赞助支持
+
+如果内容对你有帮助，欢迎自愿赞助。
+
+| 微信赞赏码 | 支付宝收款码 |
+|---|---|
+| ![微信赞赏码](https://chiguashentan-test.oss-cn-beijing.aliyuncs.com/wxprogram/zan/20261002185236_31_227.png) | ![支付宝收款码](https://chiguashentan-test.oss-cn-beijing.aliyuncs.com/wxprogram/zan/20261002185309_32_227.jpg) |
+
