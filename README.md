@@ -16,6 +16,17 @@ PHP 实现你要求的 登录后每日限阅 3 篇 PDF 的系统,可以改成付
 
 
 
+
+## 环境变量
+
+复制 `.env.example` → `.env`，设置 `PDF_ADMIN_PASS`（仓库已去掉 `123456`/`abc123` 明文）。
+
+## 冒烟自检
+
+```bash
+bash scripts/smoke.sh
+```
+
 ## **✅ 功能概览**
 
 
